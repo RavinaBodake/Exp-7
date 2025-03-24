@@ -3,7 +3,6 @@ parameters {
     choice(name: 'browser', choices: ['chrome', 'firefox'], description: 'Select the browser for testing')
     string(name: 'driversPath', defaultValue: 'C:\\Users\\pradn\\Downloads\\drivers', description: 'Enter the path to the drivers')
 }
-
 stages {
     stage('Checkout') {
         steps {
